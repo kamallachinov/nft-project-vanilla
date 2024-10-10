@@ -1,110 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./signin.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./signin.css" />
     <title>Sign in</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="logo-container">
-            <a href="../index.html"> <img src="../../Assets/images/logo.png" alt="logo"></a>
-        </div>
+      <div class="logo-container">
+        <a href="../index.html">
+          <img src="./Assets/images/logo.png" alt="logo"
+        /></a>
+      </div>
 
-        <div class="links-container">
-            <ul>
-                <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
-                <li><a href="../rankings/rankings.html">Rankings</a></li>
-                <li><a href="../signin/signin.html">Log in</a></li>
-                <li><a href="../signup/signup.html">
-                        <button><i class="fa-regular fa-user"></i>
-                            sign up</button></a>
-                </li>
-            </ul>
-        </div>
+      <div class="links-container">
+        <ul>
+          <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
+          <li><a href="../rankings/rankings.html">Rankings</a></li>
+          <li><a href="../signin/signin.html">Log in</a></li>
+          <li>
+            <a href="../signup/signup.html">
+              <button><i class="fa-regular fa-user"></i> sign up</button></a
+            >
+          </li>
+        </ul>
+      </div>
 
-        <div class="burger-icon">&#9776;</div>
+      <div class="burger-icon">&#9776;</div>
 
-        <div class="sidebar">
-            <div class="sidebar-close">&#10006;</div>
-            <ul>
-                <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
-                <li><a href="../rankings/rankings.html">Rankings</a></li>
-                <li><a href="../signin/signin.html">Sign in</a></li>
-                <li><a href="../signup/signup.html"><button><i class="fa-regular fa-user"></i>Sign up</button></a></li>
-            </ul>
-        </div>
+      <div class="sidebar">
+        <div class="sidebar-close">&#10006;</div>
+        <ul>
+          <li><a href="../marketplace/marketplace.html">Marketplace</a></li>
+          <li><a href="../rankings/rankings.html">Rankings</a></li>
+          <li><a href="../signin/signin.html">Sign in</a></li>
+          <li>
+            <a href="../signup/signup.html"
+              ><button><i class="fa-regular fa-user"></i>Sign up</button></a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <section id="signin">
-        <div class="container">
-            <img src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-85@1x.png"
-                alt="">
+      <div class="container">
+        <img
+          src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-85@1x.png"
+          alt=""
+        />
 
-            <div class="form-container">
-                <h2>Log in</h2>
-                <p>Welcome! Enter Your Details And Start logging in, Collecting And Selling Nfts.</p>
+        <div class="form-container">
+          <h2>Log in</h2>
+          <p>
+            Welcome! Enter Your Details And Start logging in, Collecting And
+            Selling Nfts.
+          </p>
 
-                <form onsubmit="return validateForm(event)">
-                    <div class="input-container">
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="text" id="email" placeholder="Email Address">
-                    </div>
-                    <div id="emailError" class="error-message"></div>
-                    <div class="input-container">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" id="password" placeholder="Password">
-                    </div>
-                    <div id="passwordError" class="error-message"></div>
-
-                    <button type="submit">Sign in</button>
-                </form>
+          <form onsubmit="return validateForm(event)">
+            <div class="input-container">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="text" id="email" placeholder="Email Address" />
             </div>
-        </div>
+            <div id="emailError" class="error-message"></div>
+            <div class="input-container">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <div id="passwordError" class="error-message"></div>
 
+            <button type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
-        <div class="footer-container">
-            <div>
-                <img src="./Assets/images/logo.png" alt="">
-                <p>NFT marketplace UI created with Anima for Figma.</p>
-                <p>Join our community</p>
-                <div class="social">
-                    <i class="fa-solid fa-basketball"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <div>
-                <h3>Explore</h3>
-                <p>Marketplace</p>
-                <p>Rankings</p>
-                <p>Connect a wallet</p>
-            </div>
-            <div>
-                <h3>Join our weekly digest</h3>
-                <p>Get exclusive promotions & updates straight to your inbox.</p>
-                <div class="email-container">
-                    <input type="text" placeholder="Enter your email here">
-                    <button><i class="fa-regular fa-envelope"></i> Subscribe</button>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div>
+          <img src="./Assets/images/logo.png" alt="" />
+          <p>NFT marketplace UI created with Anima for Figma.</p>
+          <p>Join our community</p>
+          <div class="social">
+            <i class="fa-solid fa-basketball"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </div>
-        <hr class="footer-divider">
-        <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
+        <div>
+          <h3>Explore</h3>
+          <p>Marketplace</p>
+          <p>Rankings</p>
+          <p>Connect a wallet</p>
+        </div>
+        <div>
+          <h3>Join our weekly digest</h3>
+          <p>Get exclusive promotions & updates straight to your inbox.</p>
+          <div class="email-container">
+            <input type="text" placeholder="Enter your email here" />
+            <button><i class="fa-regular fa-envelope"></i> Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
     </footer>
-
 
     <script src="../common/functionalities/sidebar.js"></script>
     <script src="./signin.js"></script>
-</body>
-
+  </body>
 </html>
