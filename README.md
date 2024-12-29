@@ -1,4 +1,4 @@
-# NFT Project (Vanilla.js)
+# NFT Project
 
 This is a simple NFT project built with vanilla JavaScript. Users can view it locally or access the deployed version on Vercel.
 
@@ -48,4 +48,4 @@ There are two ways to run the project locally:
 ## Features
 
 ###### Displays NFT project details.
-###### Built with vanilla JavaScript, HTML, and CSS.
+###### Built with vanilla JavaScript, HTML, and CSS (SCSS).
